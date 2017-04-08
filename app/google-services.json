@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "97220031317",
+    "firebase_url": "https://insideview-c0be0.firebaseio.com",
+    "project_id": "insideview-c0be0",
+    "storage_bucket": "insideview-c0be0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97220031317:android:e846b6702fe58bdd",
+        "android_client_info": {
+          "package_name": "androidadvance.com.androidsurveyexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "97220031317-ii543olhj9qr6kabs6f5mcjlm59u9t7d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "androidadvance.com.androidsurveyexample",
+            "certificate_hash": "d83ada24cbf187d2db183cc2b81bce1297118c53"
+          }
+        },
+        {
+          "client_id": "97220031317-tdufkgma405hp3chit3jrbj810hffgld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHSYc92TlN6bgMlMg_rcXPXTtIbXZ-yE8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "97220031317-tdufkgma405hp3chit3jrbj810hffgld.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

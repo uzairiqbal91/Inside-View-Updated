@@ -1,10 +1,13 @@
-<manifest
-    package="com.androidadvance.androidsurvey"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.androidadvance.androidsurvey">
+
     <application
-        android:allowBackup="true"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        >
+            android:allowBackup="true"
+            android:label="@string/app_name"
+            android:supportsRtl="true">
+        <activity android:name=".widgets.phills_result">
+        </activity>
     </application>
+
 </manifest>

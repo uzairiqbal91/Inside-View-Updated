@@ -1,53 +1,228 @@
 {
   "survey_properties": {
-    "intro_message": "<strong>Your feedback helps us to build a better mobile product.</strong><br><br><br>   Hello, Feedback from our clients, friends and family is how we make key decisions on what the future holds for XYZ App.<br><br>By combining data and previous feedback we have introduced many new features e.g. x, y, z.<br><br>It will take less than 2 minutes to answer the feedback quiz.",
+    "intro_message": "<strong>Your feedback helps us to build a better understanding of human personality.</strong><br><br><br>We combined your face data with your survey response data to predict your behavior.<br><br>It will take less than 8 minutes to answer the survey<br><br> Total Questions:20",
     "end_message": "Thank you for having the time to take our survey.",
     "skip_intro": false
   },
   "questions": [
     {
-      "question_type": "Checkboxes",
-      "question_title": "1. When do you feel at your best?",
-      "description": "(Select Any One Choice)",
-      "required": false,
+      "question_type": "Radioboxes",
+      "question_title": "question_1",
+      "description": "",
+      "required":  true,
       "random_choices": false,
       "choices": [
-        "a) in the morning",
-        "b) during the afternoon and early evening",
-        "c) late at night",
-        "thing #4"
+        "Expend energy, enjoy groups",
+        "Conserve energy, enjoy one-on-one"
       ]
     },
     {
-      "question_type": "Checkboxes",
-      "question_title": "Do you currently use one of these other software solutions?",
+      "question_type": "Radioboxes",
+      "question_title": "question_2",
       "description": "",
-      "required": false,
+      "required":  true,
       "random_choices": true,
       "choices": [
-        "<font color='#AA0000'>Yes, I use a <strong>red</strong> product</font>",
-        "I use a <font color='#00AA00'>green product</font>",
-        "I partialy use a <font color='#0000AA'><strong>blue</strong></font> product"
+        "Interpret literally",
+        "Look for meaning and possibilities"
       ]
     },
     {
-      "question_type": "String",
-      "question_title": "Why did you not subscribe at the end of your free trial ?",
+      "question_type": "Radioboxes",
+      "question_title": "question_3",
       "description": "",
-      "required": false
+      "required":  true,
+      "random_choices": true,
+      "choices": [
+        "Logical,thinking, questioning",
+        "Empathetic,feeling,accommodating"
+      ]
     },
     {
-      "question_title": "If this app was paid, how much you would give to have it ?",
+      "question_type": "Radioboxes",
+      "question_title": "question_4",
       "description": "",
-      "required": false,
-      "question_type": "Number"
+      "required":  true,
+      "random_choices": true,
+      "choices": [
+        "Organized,orderly",
+        "Flexible,adaptable"
+      ]
     },
     {
-      "question_type": "StringMultiline",
-      "question_title": "We love feedback and if there is anything else you’d like us to improve please let us know.",
+      "question_type": "Radioboxes",
+      "question_title": "question_5",
       "description": "",
-      "required": false,
-      "number_of_lines": 4
+      "required":  true,
+      "random_choices": true,
+      "choices": [
+        "More outgoing, think out loud",
+        "More reserved, think to yourself"
+      ]
+    },
+    {
+      "question_type": "Radioboxes",
+      "question_title": "question_6",
+      "description": "",
+      "required":  true,
+      "random_choices": true,
+      "choices": [
+        "Practical,realistic, experiential",
+        "Imaginative,innovative, theoretical"
+      ]
+    },
+    {
+      "question_type": "Radioboxes",
+      "question_title": "question_7",
+      "description": "",
+      "required":  true,
+      "random_choices": true,
+      "choices": [
+        "Candid, straight forward, frank, experiential",
+        "Tactful, kind, encouraging"
+      ]
+    },
+    {
+      "question_type": "Radioboxes",
+      "question_title": "question_8",
+      "description": "",
+      "required": true,
+      "random_choices": true,
+      "choices": [
+        "Plan,schedule",
+        "Unplanned, spontaneous"
+      ]
+    },
+    {
+      "question_type": "Radioboxes",
+      "question_title": "question_9",
+      "description": "",
+      "required":  true,
+      "random_choices": true,
+      "choices": [
+        "Seek many tasks, public activities, interaction with others",
+        "Seek private, solitary activities with quiet to concentrate"
+      ]
+    },
+    {
+      "question_type": "Radioboxes",
+      "question_title": "question_10",
+      "description": "",
+      "required": true,
+      "random_choices": true,
+      "choices": [
+        "Standard, usual, conventional",
+        "Different, novel, unique"
+      ]
+    },
+    {
+      "question_type": "Radioboxes",
+      "question_title": "question_11",
+      "description": "",
+      "required":  true,
+      "random_choices": true,
+      "choices": [
+        "Firm, tend to criticize, hold the line",
+        "Gentle, tend to appreciate, conciliate"
+      ]
+    },
+    {
+      "question_type": "Radioboxes",
+      "question_title": "question_12",
+      "description": "",
+      "required":  true,
+      "random_choices": true,
+      "choices": [
+        "Regulated, structured",
+        "Easygoing, “live” and “let live”"
+      ]
+    },
+    {
+      "question_type": "Radioboxes",
+      "question_title": "question_13",
+      "description": "",
+      "required":  true,
+      "random_choices": true,
+      "choices": [
+        "External, communicative, express yourself",
+        "internal, reticent, keep to yourself"
+      ]
+    },
+    {
+      "question_type": "Radioboxes",
+      "question_title": "question_14",
+      "description": "",
+      "required":  true,
+      "random_choices": true,
+      "choices": [
+        "Focus on here-and-now",
+        "Look to the future, global perspective, “big picture”"
+      ]
+    },
+    {
+      "question_type": "Radioboxes",
+      "question_title": "question_15",
+      "description": "",
+      "required":  true,
+      "random_choices": true,
+      "choices": [
+        "Tough-minded, just",
+        "Tender-hearted, merciful"
+      ]
+    },
+    {
+      "question_type": "Radioboxes",
+      "question_title": "question_16",
+      "description": "",
+      "required":  true,
+      "random_choices": true,
+      "choices": [
+        "Preparation, plan ahead",
+        "Go with the flow, adapt as you go"
+      ]
+    },
+    {
+      "question_type": "Radioboxes",
+      "question_title": "question_17",
+      "description": "",
+      "required":  true,
+      "random_choices": true,
+      "choices": [
+        "Active, initiate",
+        "Reflective, deliberate"
+      ]
+    },
+    {
+      "question_type": "Radioboxes",
+      "question_title": "question_18",
+      "description": "",
+      "required":  true,
+      "random_choices": true,
+      "choices": [
+        "Facts, things, “what is”",
+        "Ideas, dreams, “what could be,” philosophical"
+      ]
+    },
+    {
+      "question_type": "Radioboxes",
+      "question_title": "question_19",
+      "description": "",
+      "required":  true,
+      "random_choices": true,
+      "choices": [
+        "matter of fact, issue-oriented",
+        "sensitive, people-oriented, compassionate"
+      ]
+    },{
+      "question_type": "Radioboxes",
+      "question_title": "question_20",
+      "description": "",
+      "required":  true,
+      "random_choices": true,
+      "choices": [
+        "control, govern",
+        "latitude, freedom"
+      ]
     }
   ]
 }

@@ -37,10 +37,12 @@ public class Answers {
           record.child("Record").child("Answer" +i).setValue( entry.getValue());
           i++;
       }
-      int score=PhillsScores();
+  //    int score=PhillsScores();
       String type=MayersScore();
-      record.child("Record").child("PhillsScore").setValue(score);
+
+      //record.child("Record").child("PhillsScore").setValue(score);
       record.child("Record").child("MayersType").setValue(type);
+
 //      record.child("Record").child("Json").setValue(String.valueOf(answered_hashmap));
 
 
@@ -76,7 +78,6 @@ public class Answers {
                                 || (me.getValue().equals("internal, reticent, keep to yourself"))
                                 || (me.getValue().equals("Reflective, deliberate"))
                                 ){
-
                             I=I+1;
                         }
                    }

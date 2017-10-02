@@ -1,12 +1,25 @@
 package com.androidadvance.androidsurvey;
 
 
+import android.graphics.Bitmap;
+import android.support.annotation.NonNull;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 import com.google.gson.Gson;
 
-
-import java.util.*;
+import java.io.ByteArrayOutputStream;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Set;
 
 //Singleton Answers ........
 
@@ -20,15 +33,18 @@ public class Answers {
     private FirebaseDatabase firebase;
     private DatabaseReference database;
     private DatabaseReference table;
-
+    public static DatabaseReference record;
+    public static String type="";
+    private StorageReference mstorage;
 
     public Answers() {
         firebase = FirebaseDatabase.getInstance();
         database = firebase.getReference(DB_NAME);
         table = database.child(ENTITY_NAME_PROFILES);
+        mstorage= FirebaseStorage.getInstance().getReference();
     }
   public void StoredDataToFireBase(){
-      DatabaseReference record = table.push();
+       record = table.push();
 
       int i=1;
 
@@ -42,7 +58,48 @@ public class Answers {
 
       //record.child("Record").child("PhillsScore").setValue(score);
       record.child("Record").child("MayersType").setValue(type);
+      record.child("Record").child("Age").setValue(MainActivity.spinner2.getSelectedItem().toString());
+      record.child("Record").child("Gender").setValue(MainActivity.spinner1.getSelectedItem().toString());
+      record.child("Record").child("Rating").setValue(String.valueOf(UserProfile.ratingRatingBar.getRating()));
 
+      //image saving to firebase media with same user id
+
+//      CognitiveCa.imageView.setDrawingCacheEnabled(true);
+//      CognitiveCa.imageView.buildDrawingCache();
+//
+//      Bitmap bitmap = CognitiveCa.imageView.getDrawingCache();
+//      ByteArrayOutputStream baos = new ByteArrayOutputStream();
+//      UserProfile.photo.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+//      byte[] data1 = baos.toByteArray();
+//
+//      // Uri uri=data.getData();
+////            try {
+////                photo = MediaStore.Images.Media.getBitmap(this.getContentResolver(), uri);
+////            } catch (IOException e) {
+////                e.printStackTrace();
+////            }
+//
+//      StorageReference fileupload=mstorage.child(String.valueOf("pic01"));
+//      UploadTask uploadTask =fileupload.putBytes(data1);
+//      uploadTask.addOnFailureListener(new OnFailureListener() {
+//          @Override
+//          public void onFailure(@NonNull Exception exception) {
+//              // Handle unsuccessful uploads
+//          }
+//      }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+//          @Override
+//          public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+//              // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
+////              Uri downloadUrl = taskSnapshot.getDownloadUrl();
+////
+////              DatabaseReference record=table.child("pic01");
+////              record.setValue(downloadUrl.getLastPathSegment());
+////
+////
+//              //Toast.makeText(,"Saved into Database",Toast.LENGTH_SHORT).show();
+//
+//          }
+//      });
 //      record.child("Record").child("Json").setValue(String.valueOf(answered_hashmap));
 
 

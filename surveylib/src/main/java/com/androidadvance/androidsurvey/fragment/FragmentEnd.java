@@ -1,5 +1,6 @@
 package com.androidadvance.androidsurvey.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -9,8 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-
 import com.androidadvance.androidsurvey.Answers;
+import com.androidadvance.androidsurvey.CognitiveCa;
 import com.androidadvance.androidsurvey.R;
 import com.androidadvance.androidsurvey.SurveyActivity;
 import com.androidadvance.androidsurvey.models.SurveyProperties;
@@ -19,7 +20,7 @@ public class FragmentEnd extends Fragment {
 
     private FragmentActivity mContext;
     private TextView textView_end;
-
+    private static final int SURVEY_REQUEST = 1337;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -36,6 +37,11 @@ public class FragmentEnd extends Fragment {
             public void onClick(View v) {
 
                 ((SurveyActivity) mContext).event_survey_completed(Answers.getInstance());
+                Intent i_Sanp=new Intent(getActivity(),CognitiveCa.class);
+                startActivityForResult(i_Sanp,SURVEY_REQUEST);
+
+
+
 
             }
         });

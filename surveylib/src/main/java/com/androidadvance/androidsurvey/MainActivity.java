@@ -1,4 +1,4 @@
-package androidadvance.com.androidsurveyexample;
+package com.androidadvance.androidsurvey;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import com.androidadvance.androidsurvey.Answers;
-import com.androidadvance.androidsurvey.SurveyActivity;
+import android.widget.Spinner;
+
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -24,27 +24,30 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseDatabase firebase;
     private DatabaseReference database;
     private DatabaseReference table;
+    public static Spinner spinner1;
+    public static Spinner spinner2;
     Button button_Snap;
     int ans=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
+        spinner1= (Spinner) findViewById(R.id.spinner1);
+        spinner2= (Spinner) findViewById(R.id.spinner2);
 
         //Nothing fancy here. Plain old simple buttons....
-          button_Snap=(Button) findViewById(R.id.snap) ;
-         Button button_survey_example_1 = (Button) findViewById(R.id.button_survey_example_1);
-//        Button button_survey_example_2 = (Button) findViewById(R.id.button_survey_example_2);
-       // Button button_survey_example_3 = (Button) findViewById(R.id.button_survey_example_3);
 
-        button_Snap.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i_Sanp=new Intent(MainActivity.this,CognitiveCa.class);
-                startActivityForResult(i_Sanp,SURVEY_REQUEST);
-            }
-        });
+        Button button_survey_example_1 = (Button) findViewById(R.id.button_survey_example_1);
+//        Button button_survey_example_2 = (Button) findViewById(R.id.button_survey_example_2);
+        // Button button_survey_example_3 = (Button) findViewById(R.id.button_survey_example_3);
+
+//        button_Snap.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//            }
+//        });
 
         button_survey_example_1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Answers.getInstance().StoredDataToFireBase();
                 Answers.getInstance().MayersScore();
-               }
+            }
         }
     }
 

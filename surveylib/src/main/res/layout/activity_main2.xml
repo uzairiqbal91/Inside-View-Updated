@@ -17,17 +17,34 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true">
 
-        <Button
+        <Spinner
+            android:id="@+id/spinner1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Image features"
-            android:id="@+id/snap"/>
+            android:entries="@array/gender"
+            android:prompt="@string/gender_prompt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/age"
+            android:prompt="@string/age_prompt"
+            android:layout_below="@+id/spinner1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="36dp" />
 
         <Button
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="psychological test"
-            android:id="@+id/button_survey_example_1"/>
+            android:text="Let's start"
+            android:id="@+id/button_survey_example_1"
+            android:layout_marginTop="36dp"
+            />
 
 
     </LinearLayout>

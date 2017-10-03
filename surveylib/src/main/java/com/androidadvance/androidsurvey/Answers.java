@@ -3,6 +3,7 @@ package com.androidadvance.androidsurvey;
 
 import android.graphics.Bitmap;
 import android.support.annotation.NonNull;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -37,6 +38,7 @@ public class Answers {
     public static String type="";
     private StorageReference mstorage;
 
+
     public Answers() {
         firebase = FirebaseDatabase.getInstance();
         database = firebase.getReference(DB_NAME);
@@ -66,6 +68,8 @@ public class Answers {
 
 //      CognitiveCa.imageView.setDrawingCacheEnabled(true);
 //      CognitiveCa.imageView.buildDrawingCache();
+//
+//
 //
 //      Bitmap bitmap = CognitiveCa.imageView.getDrawingCache();
 //      ByteArrayOutputStream baos = new ByteArrayOutputStream();

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
 
 import com.google.firebase.database.DatabaseReference;
@@ -24,8 +25,13 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseDatabase firebase;
     private DatabaseReference database;
     private DatabaseReference table;
+
     public static Spinner spinner1;
     public static Spinner spinner2;
+
+
+
+
     Button button_Snap;
     int ans=0;
 

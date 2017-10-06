@@ -1,0 +1,146 @@
+{
+  "survey_properties": {
+    "intro_message": "None...It will be skipped!",
+    "end_message": "Thank you for having the time to take our survey.",
+    "skip_intro": true
+  },
+  "questions": [
+    {
+      "question_type": "Radioboxes",
+      "question_title": "1. When do you feel at your best?",
+      "description": "",
+      "required": true,
+      "random_choices": false,
+      "choices": [
+        " In the morning",
+        " During the afternoon and early evening",
+        " Late at night"
+
+      ]
+    },
+    {
+      "question_type": "Radioboxes",
+      "question_title": "2. You usually walk.....",
+      "description": "",
+      "required": true,
+      "random_choices": true,
+      "choices": [
+
+        " Fairly fast, with long steps",
+        " Fairly fast, with little steps",
+        " Less fast head up, looking the world in the face",
+        " Less fast, head down",
+        " Very slowly"
+      ]
+    },
+    {
+      "question_type": "Radioboxes",
+      "question_title": "3. When talking to people, you...",
+      "description": "",
+      "required": true,
+      "random_choices": true,
+      "choices": [
+        " Stand with your arms folded",
+        " Have your hands clasped",
+        " Have one or both your hands on your hips or in pockets",
+        " Touch or push the person to whom you are talking",
+        " Play with your"
+      ]
+    },
+    {
+      "question_type": "Radioboxes",
+      "question_title": "4. When relaxing, you sit with...",
+      "description": "",
+      "required": true,
+      "random_choices": true,
+      "choices": [
+        " Your knees bent with your legs neatly side by side",
+        " Your legs crossed",
+        " Your legs stretched out or straight",
+        " One leg curled under you"
+      ]
+    },
+    {
+      "question_type": "Radioboxes",
+      "question_title": "5. When something really amuses you,You react with...",
+      "description": "",
+      "required": true,
+      "random_choices": true,
+      "choices": [
+        " A big appreciated laugh",
+        " A laugh, but not a loud one",
+        " A quiet chuckle",
+        " A sheepish smile"
+      ]
+    },
+    {
+      "question_type": "Radioboxes",
+      "question_title": "6. When you go to a party or social gathering, you...",
+      "description": "",
+      "required": true,
+      "random_choices": true,
+      "choices": [
+        " Make a loud entrance so everyone notices you",
+        " Make a quiet entrance, looking around for someone you know",
+        " Make the quietest entrance, trying to stay unnoticed"
+      ]
+    },
+    {
+      "question_type": "Radioboxes",
+      "question_title": "7. When you're working or concentrating very hard, and you're interrupted, you...",
+      "description": "",
+      "required": true,
+      "random_choices": true,
+      "choices": [
+        " Make a loud entrance so everyone notices you",
+        " Make a quiet entrance, looking around for someone you know",
+        " Make the quietest entrance, trying to stay unnoticed"
+      ]
+    },
+    {
+      "question_type": "Radioboxes",
+      "question_title": "8. Which of the following colors do you like most?",
+      "description": "",
+      "required": true,
+      "random_choices": true,
+      "choices": [
+        " Red or orange",
+        " Black",
+        " Yellow or light blue",
+        " Green",
+        " Dark blue or purple ",
+        " White",
+        " Brown or gray"
+      ]
+    },
+    {
+      "question_type": "Radioboxes",
+      "question_title": "9. When you are in bed at night, in those last few moments before going to sleep,you lie...",
+      "description": "",
+      "required": true,
+      "random_choices": true,
+      "choices": [
+        " Stretched out on your back",
+        " Stretched out face down on your stomach",
+        " On your side, slightly curled",
+        " With your head on one arm",
+        " With your head under the covers"
+      ]
+    },
+    {
+      "question_type": "Radioboxes",
+      "question_title": "10. You often dream that you are...",
+      "description": "",
+      "required": true,
+      "random_choices": true,
+      "choices": [
+        " Falling",
+        " Fighting or struggling",
+        " Searching for something or somebody",
+        " Flying or floating",
+        " You usually have dreamless sleep",
+        " Your dreams are always pleasant"
+      ]
+    }
+  ]
+}

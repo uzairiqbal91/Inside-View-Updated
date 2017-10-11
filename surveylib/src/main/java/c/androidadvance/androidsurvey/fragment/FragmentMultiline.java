@@ -1,4 +1,4 @@
-package com.androidadvance.androidsurvey.fragment;
+package c.androidadvance.androidsurvey.fragment;
 
 import android.app.Service;
 import android.os.Bundle;
@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.text.Editable;
 import android.text.Html;
-import android.text.InputType;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,12 +15,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.androidadvance.androidsurvey.Answers;
-import com.androidadvance.androidsurvey.R;
-import com.androidadvance.androidsurvey.SurveyActivity;
-import com.androidadvance.androidsurvey.models.Question;
+import c.androidadvance.androidsurvey.Answers;
+import c.androidadvance.androidsurvey.SurveyActivity;
+import c.androidadvance.androidsurvey.models.Question;
 
-public class FragmentNumber extends Fragment {
+public class FragmentMultiline extends Fragment {
 
     private FragmentActivity mContext;
     private Button button_continue;
@@ -32,15 +30,14 @@ public class FragmentNumber extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(
-                R.layout.fragment_text_simple, container, false);
+                c.androidadvance.androidsurvey.R.layout.fragment_text_multiline, container, false);
 
-        button_continue = (Button) rootView.findViewById(R.id.button_continue);
-        textview_q_title = (TextView) rootView.findViewById(R.id.textview_q_title);
-        editText_answer = (EditText) rootView.findViewById(R.id.editText_answer);
-        editText_answer.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
+        button_continue = (Button) rootView.findViewById(c.androidadvance.androidsurvey.R.id.button_continue);
+        textview_q_title = (TextView) rootView.findViewById(c.androidadvance.androidsurvey.R.id.textview_q_title);
+        editText_answer = (EditText) rootView.findViewById(c.androidadvance.androidsurvey.R.id.editText_answer);
         button_continue.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
-                Answers.getInstance().put_answer(textview_q_title.getText().toString(), editText_answer.getText().toString().trim());
+                 Answers.getInstance().put_answer(textview_q_title.getText().toString(), editText_answer.getText().toString().trim());
                 ((SurveyActivity) mContext).go_to_next();
             }
         });
@@ -53,7 +50,6 @@ public class FragmentNumber extends Fragment {
 
         mContext = getActivity();
         Question q_data = (Question) getArguments().getSerializable("data");
-
 
         if (q_data.getRequired()) {
             button_continue.setVisibility(View.GONE);
@@ -68,7 +64,7 @@ public class FragmentNumber extends Fragment {
 
                 @Override
                 public void afterTextChanged(Editable s) {
-                    if (s.length() > 0) {
+                    if (s.length() > 3) {
                         button_continue.setVisibility(View.VISIBLE);
                     } else {
                         button_continue.setVisibility(View.GONE);
@@ -76,7 +72,6 @@ public class FragmentNumber extends Fragment {
                 }
             });
         }
-
 
         textview_q_title.setText(Html.fromHtml(q_data.getQuestionTitle()));
         editText_answer.requestFocus();

@@ -1,8 +1,8 @@
-package com.androidadvance.androidsurvey.widgets;
+package c.androidadvance.androidsurvey.widgets;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import com.androidadvance.androidsurvey.R;
+import c.androidadvance.androidsurvey.R;
 
 public class phills_result extends AppCompatActivity {
 

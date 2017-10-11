@@ -1,4 +1,4 @@
-package com.androidadvance.androidsurvey.models;
+package c.androidadvance.androidsurvey.models;
 
 
 import java.io.Serializable;

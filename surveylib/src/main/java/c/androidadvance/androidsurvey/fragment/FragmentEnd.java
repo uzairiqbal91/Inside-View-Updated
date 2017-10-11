@@ -1,4 +1,4 @@
-package com.androidadvance.androidsurvey.fragment;
+package c.androidadvance.androidsurvey.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,11 +10,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-import com.androidadvance.androidsurvey.Answers;
-import com.androidadvance.androidsurvey.CognitiveCa;
-import com.androidadvance.androidsurvey.R;
-import com.androidadvance.androidsurvey.SurveyActivity;
-import com.androidadvance.androidsurvey.models.SurveyProperties;
+import c.androidadvance.androidsurvey.Answers;
+import c.androidadvance.androidsurvey.CognitiveCa;
+import c.androidadvance.androidsurvey.R;
+import c.androidadvance.androidsurvey.SurveyActivity;
+import c.androidadvance.androidsurvey.models.SurveyProperties;
 
 public class FragmentEnd extends Fragment {
 

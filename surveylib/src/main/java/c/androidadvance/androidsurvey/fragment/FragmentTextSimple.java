@@ -1,4 +1,4 @@
-package com.androidadvance.androidsurvey.fragment;
+package c.androidadvance.androidsurvey.fragment;
 
 import android.app.Service;
 import android.os.Bundle;
@@ -15,10 +15,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.androidadvance.androidsurvey.Answers;
-import com.androidadvance.androidsurvey.R;
-import com.androidadvance.androidsurvey.SurveyActivity;
-import com.androidadvance.androidsurvey.models.Question;
+import c.androidadvance.androidsurvey.Answers;
+import c.androidadvance.androidsurvey.SurveyActivity;
+import c.androidadvance.androidsurvey.models.Question;
 
 public class FragmentTextSimple extends Fragment {
 
@@ -31,11 +30,11 @@ public class FragmentTextSimple extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(
-                R.layout.fragment_text_simple, container, false);
+                c.androidadvance.androidsurvey.R.layout.fragment_text_simple, container, false);
 
-        button_continue = (Button) rootView.findViewById(R.id.button_continue);
-        textview_q_title = (TextView) rootView.findViewById(R.id.textview_q_title);
-        editText_answer = (EditText) rootView.findViewById(R.id.editText_answer);
+        button_continue = (Button) rootView.findViewById(c.androidadvance.androidsurvey.R.id.button_continue);
+        textview_q_title = (TextView) rootView.findViewById(c.androidadvance.androidsurvey.R.id.textview_q_title);
+        editText_answer = (EditText) rootView.findViewById(c.androidadvance.androidsurvey.R.id.editText_answer);
         button_continue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

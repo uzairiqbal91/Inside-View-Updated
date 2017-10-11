@@ -1,4 +1,4 @@
-package com.androidadvance.androidsurvey.fragment;
+package c.androidadvance.androidsurvey.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,9 +10,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.androidadvance.androidsurvey.R;
-import com.androidadvance.androidsurvey.SurveyActivity;
-import com.androidadvance.androidsurvey.models.SurveyProperties;
+import c.androidadvance.androidsurvey.SurveyActivity;
+import c.androidadvance.androidsurvey.models.SurveyProperties;
 
 
 public class FragmentStart extends Fragment {
@@ -24,10 +23,10 @@ public class FragmentStart extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(
-                R.layout.fragment_start, container, false);
+                c.androidadvance.androidsurvey.R.layout.fragment_start, container, false);
 
-        textView_start = (TextView) rootView.findViewById(R.id.textView_start);
-        Button button_continue = (Button) rootView.findViewById(R.id.button_continue);
+        textView_start = (TextView) rootView.findViewById(c.androidadvance.androidsurvey.R.id.textView_start);
+        Button button_continue = (Button) rootView.findViewById(c.androidadvance.androidsurvey.R.id.button_continue);
         button_continue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

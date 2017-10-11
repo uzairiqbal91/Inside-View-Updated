@@ -1,4 +1,4 @@
-package com.androidadvance.androidsurvey.fragment;
+package c.androidadvance.androidsurvey.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -14,10 +14,9 @@ import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.androidadvance.androidsurvey.Answers;
-import com.androidadvance.androidsurvey.R;
-import com.androidadvance.androidsurvey.SurveyActivity;
-import com.androidadvance.androidsurvey.models.Question;
+import c.androidadvance.androidsurvey.Answers;
+import c.androidadvance.androidsurvey.SurveyActivity;
+import c.androidadvance.androidsurvey.models.Question;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -36,11 +35,11 @@ public class FragmentCheckboxes extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(
-                R.layout.fragment_checkboxes, container, false);
+                c.androidadvance.androidsurvey.R.layout.fragment_checkboxes, container, false);
 
-        button_continue = (Button) rootView.findViewById(R.id.button_continue);
-        textview_q_title = (TextView) rootView.findViewById(R.id.textview_q_title);
-        linearLayout_checkboxes = (LinearLayout) rootView.findViewById(R.id.linearLayout_checkboxes);
+        button_continue = (Button) rootView.findViewById(c.androidadvance.androidsurvey.R.id.button_continue);
+        textview_q_title = (TextView) rootView.findViewById(c.androidadvance.androidsurvey.R.id.textview_q_title);
+        linearLayout_checkboxes = (LinearLayout) rootView.findViewById(c.androidadvance.androidsurvey.R.id.linearLayout_checkboxes);
         button_continue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

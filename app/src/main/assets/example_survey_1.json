@@ -7,7 +7,7 @@
   "questions": [
     {
       "question_type": "Radioboxes",
-      "question_title": "question_1",
+      "question_title": "question_1 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
       "random_choices": false,
@@ -18,7 +18,7 @@
     },
     {
       "question_type": "Radioboxes",
-      "question_title": "question_2",
+      "question_title": "question_2 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
       "random_choices": true,
@@ -29,7 +29,7 @@
     },
     {
       "question_type": "Radioboxes",
-      "question_title": "question_3",
+      "question_title": "question_3 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
       "random_choices": true,
@@ -40,7 +40,7 @@
     },
     {
       "question_type": "Radioboxes",
-      "question_title": "question_4",
+      "question_title": "question_4 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
       "random_choices": true,
@@ -51,7 +51,7 @@
     },
     {
       "question_type": "Radioboxes",
-      "question_title": "question_5",
+      "question_title": "question_5 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
       "random_choices": true,
@@ -62,7 +62,7 @@
     },
     {
       "question_type": "Radioboxes",
-      "question_title": "question_6",
+      "question_title": "question_6 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
       "random_choices": true,
@@ -73,7 +73,7 @@
     },
     {
       "question_type": "Radioboxes",
-      "question_title": "question_7",
+      "question_title": "question_7 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
       "random_choices": true,
@@ -84,7 +84,7 @@
     },
     {
       "question_type": "Radioboxes",
-      "question_title": "question_8",
+      "question_title": "question_8 : In Which Category Do You Belong ?",
       "description": "",
       "required": true,
       "random_choices": true,
@@ -95,7 +95,7 @@
     },
     {
       "question_type": "Radioboxes",
-      "question_title": "question_9",
+      "question_title": "question_9 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
       "random_choices": true,
@@ -106,7 +106,7 @@
     },
     {
       "question_type": "Radioboxes",
-      "question_title": "question_10",
+      "question_title": "question_10 : In Which Category Do You Belong ?",
       "description": "",
       "required": true,
       "random_choices": true,
@@ -117,18 +117,18 @@
     },
     {
       "question_type": "Radioboxes",
-      "question_title": "question_11",
+      "question_title": "question_11 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
       "random_choices": true,
       "choices": [
         "Firm, tend to criticize, hold the line",
-        "Gentle, tend to appreciate, conciliate"
+        "Gentle, tend to appreciate, conciliate(statisfied)"
       ]
     },
     {
       "question_type": "Radioboxes",
-      "question_title": "question_12",
+      "question_title": "question_12 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
       "random_choices": true,
@@ -139,18 +139,18 @@
     },
     {
       "question_type": "Radioboxes",
-      "question_title": "question_13",
+      "question_title": "question_13 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
       "random_choices": true,
       "choices": [
         "External, communicative, express yourself",
-        "internal, reticent, keep to yourself"
+        "internal, reticent(reserved/shy), keep to yourself"
       ]
     },
     {
       "question_type": "Radioboxes",
-      "question_title": "question_14",
+      "question_title": "question_14 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
       "random_choices": true,
@@ -161,7 +161,7 @@
     },
     {
       "question_type": "Radioboxes",
-      "question_title": "question_15",
+      "question_title": "question_15 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
       "random_choices": true,
@@ -172,7 +172,7 @@
     },
     {
       "question_type": "Radioboxes",
-      "question_title": "question_16",
+      "question_title": "question_16 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
       "random_choices": true,
@@ -183,7 +183,7 @@
     },
     {
       "question_type": "Radioboxes",
-      "question_title": "question_17",
+      "question_title": "question_17 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
       "random_choices": true,
@@ -194,7 +194,7 @@
     },
     {
       "question_type": "Radioboxes",
-      "question_title": "question_18",
+      "question_title": "question_18 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
       "random_choices": true,
@@ -205,7 +205,7 @@
     },
     {
       "question_type": "Radioboxes",
-      "question_title": "question_19",
+      "question_title": "question_19 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
       "random_choices": true,
@@ -215,7 +215,7 @@
       ]
     },{
       "question_type": "Radioboxes",
-      "question_title": "question_20",
+      "question_title": "question_20 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
       "random_choices": true,

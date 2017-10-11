@@ -1,9 +1,9 @@
-package com.androidadvance.androidsurvey;
+package c.androidadvance.androidsurvey;
 
 
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.support.annotation.NonNull;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -36,7 +36,8 @@ public class Answers {
     private DatabaseReference table;
     public static DatabaseReference record;
     public static String type="";
-    private StorageReference mstorage;
+    private static StorageReference mstorage;
+    public static Bitmap bitmap;
 
 
     public Answers() {
@@ -63,7 +64,8 @@ public class Answers {
       record.child("Record").child("Age").setValue(MainActivity.spinner2.getSelectedItem().toString());
       record.child("Record").child("Gender").setValue(MainActivity.spinner1.getSelectedItem().toString());
       record.child("Record").child("Rating").setValue(String.valueOf(UserProfile.ratingRatingBar.getRating()));
-
+      record.child("Face").setValue(CognitiveCa.result1[0]);
+      movetodb(bitmap);
       //image saving to firebase media with same user id
 
 //      CognitiveCa.imageView.setDrawingCacheEnabled(true);
@@ -71,9 +73,10 @@ public class Answers {
 //
 //
 //
-//      Bitmap bitmap = CognitiveCa.imageView.getDrawingCache();
+     // Bitmap bitmap = CognitiveCa.imageView.getDrawingCache();
+//
 //      ByteArrayOutputStream baos = new ByteArrayOutputStream();
-//      UserProfile.photo.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+//      CognitiveCa.photo.compress(Bitmap.CompressFormat.JPEG, 100, baos);
 //      byte[] data1 = baos.toByteArray();
 //
 //      // Uri uri=data.getData();
@@ -83,7 +86,7 @@ public class Answers {
 ////                e.printStackTrace();
 ////            }
 //
-//      StorageReference fileupload=mstorage.child(String.valueOf("pic01"));
+//      StorageReference fileupload=mstorage.child(record.getKey());
 //      UploadTask uploadTask =fileupload.putBytes(data1);
 //      uploadTask.addOnFailureListener(new OnFailureListener() {
 //          @Override
@@ -98,16 +101,55 @@ public class Answers {
 ////
 ////              DatabaseReference record=table.child("pic01");
 ////              record.setValue(downloadUrl.getLastPathSegment());
-////
-////
-//              //Toast.makeText(,"Saved into Database",Toast.LENGTH_SHORT).show();
+//
+//
+//             // Toast.makeText(,"Saved into Database",Toast.LENGTH_SHORT).show();
 //
 //          }
 //      });
-//      record.child("Record").child("Json").setValue(String.valueOf(answered_hashmap));
+    record.child("Record").child("Json").setValue(String.valueOf(answered_hashmap));
+
 
 
   }
+    public static void movetodb(Bitmap bitmap)
+    {
+
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+        byte[] data1 = baos.toByteArray();
+
+        // Uri uri=data.getData();
+//            try {
+//                photo = MediaStore.Images.Media.getBitmap(this.getContentResolver(), uri);
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+
+        StorageReference fileupload=mstorage.child(String.valueOf(record.getKey()));
+        UploadTask uploadTask =fileupload.putBytes(data1);
+        uploadTask.addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception exception) {
+                // Handle unsuccessful uploads
+            }
+        }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
+                //Uri downloadUrl = taskSnapshot.getDownloadUrl();
+
+                //DatabaseReference record=table.child("pic01");
+                //record.setValue(downloadUrl.getLastPathSegment());
+
+
+
+
+            }
+        });
+
+    }
+
     public String MayersScore() {
         final DatabaseReference record = table.push();
         int E=0, S=0, T=0, J = 0;

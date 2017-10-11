@@ -8,7 +8,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity">
+    android:background="@drawable/download"
+    tools:context="c.androidadvance.androidsurvey.MainActivity">
 
     <LinearLayout
         android:orientation="vertical"
@@ -23,6 +24,7 @@
             android:layout_height="wrap_content"
             android:entries="@array/gender"
             android:prompt="@string/gender_prompt"
+            android:background="@drawable/spinner_round_btn"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginTop="10dp" />
@@ -32,6 +34,7 @@
             android:layout_height="wrap_content"
             android:entries="@array/age"
             android:prompt="@string/age_prompt"
+            android:background="@drawable/spinner_round_btn"
             android:layout_below="@+id/spinner1"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
@@ -42,6 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Let's start"
+            android:background="@drawable/round_btn"
             android:id="@+id/button_survey_example_1"
             android:layout_marginTop="36dp"
             />

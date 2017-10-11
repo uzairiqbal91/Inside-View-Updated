@@ -1,6 +1,5 @@
-package com.androidadvance.androidsurvey;
+package c.androidadvance.androidsurvey;
 
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -53,7 +52,7 @@ textView.setText(MainActivity.spinner2.getSelectedItem().toString());
         {
             bgImageView.setBackgroundResource(R.drawable.istj);
             textView2.setText("Introversion , Sensing , Thinking , Judging ");
-            textView3.setText("Quiet, serious, earn success by thoroughness and dependability. Practical, matter-of-fact, realistic, and responsible. Decide logically what should be done and work toward it steadily, regardless of distractions. Take pleasure in making everything orderly and organized - their work, their home, their life. Value traditions and loyalty.");
+            textView3.setText("Quiet, serious, earn success by thoroughness(completeness) and dependability. Practical, matter-of-fact, realistic, and responsible. Decide logically what should be done and work toward it steadily(hardly), regardless of distractions. Take pleasure in making everything orderly and organized - their work, their home, their life. Value traditions and loyalty.");
             Toast.makeText(this,Answers.getInstance().MayersScore(),Toast.LENGTH_LONG).show();
 
         }
@@ -61,7 +60,7 @@ textView.setText(MainActivity.spinner2.getSelectedItem().toString());
         {
             bgImageView.setBackgroundResource(R.drawable.isfj);
             textView2.setText("Introversion , Sensing , Feeling , Judging ");
-            textView3.setText("Quiet, friendly, responsible, and conscientious. Committed and steady in meeting their obligations. Thorough, painstaking, and accurate. Loyal, considerate, notice and remember specifics about people who are important to them, concerned with how others feel. Strive to create an orderly and harmonious environment at work and at home.");
+            textView3.setText("Quiet, friendly, responsible, and conscientious(hard-worker/fulfils duty). Committed and steady(fixed) in meeting their obligations(commitments). Thorough(completeness), painstaking, and accurate. Loyal, considerate, notice and remember specifics about people who are important to them, concerned with how others feel. Strive to create an orderly and harmonious environment at work and at home.");
             Toast.makeText(this,Answers.getInstance().MayersScore(),Toast.LENGTH_LONG).show();
 
 
@@ -76,7 +75,7 @@ textView.setText(MainActivity.spinner2.getSelectedItem().toString());
         else if(Answers.getInstance().MayersScore().equalsIgnoreCase("intj")) {
             bgImageView.setBackgroundResource(R.drawable.intj);
             textView2.setText("Introversion , Intuition ,  Thinking , Judging ");
-            textView3.setText("Have original minds and great drive for implementing their ideas and achieving their goals. Quickly see patterns in external events and develop long-range explanatory perspectives. When committed, organize a job and carry it through. Skeptical and independent, have high standards of competence and performance - for themselves and others.");
+            textView3.setText("Have original minds and great drive for implementing their ideas and achieving their goals. Quickly see patterns in external events and develop long-range explanatory perspectives. When committed, organize a job and carry it through. Skeptical(doubtful) and independent, have high standards of competence and performance - for themselves and others.");
             Toast.makeText(this,Answers.getInstance().MayersScore(),Toast.LENGTH_LONG).show();
 
 
@@ -100,7 +99,7 @@ textView.setText(MainActivity.spinner2.getSelectedItem().toString());
         else if(Answers.getInstance().MayersScore().equalsIgnoreCase("infp")) {
             bgImageView.setBackgroundResource(R.drawable.infp);
             textView2.setText("Introversion , Intuition  , Feeling ,Perceiving ");
-            textView3.setText("Idealistic, loyal to their values and to people who are important to them. Want an external life that is congruent with their values. Curious, quick to see possibilities, can be catalysts for implementing ideas. Seek to understand people and to help them fulfill their potential. Adaptable, flexible, and accepting unless a value is threatened.");
+            textView3.setText("Idealistic, loyal to their values and to people who are important to them. Want an external life that is congruent(accordingly) with their values. Curious, quick to see possibilities, can be catalysts for implementing ideas. Seek to understand people and to help them fulfill their potential. Adaptable, flexible, and accepting unless a value is threatened.");
             Toast.makeText(this,Answers.getInstance().MayersScore(),Toast.LENGTH_LONG).show();
 
 
@@ -121,7 +120,7 @@ textView.setText(MainActivity.spinner2.getSelectedItem().toString());
         else if(Answers.getInstance().MayersScore().equalsIgnoreCase("estp")) {
             bgImageView.setBackgroundResource(R.drawable.estp);
             textView2.setText("Extraversion ,Sensing , Thinking ,Perceiving ");
-            textView3.setText("Flexible and tolerant, they take a pragmatic approach focused on immediate results. Theories and conceptual explanations bore them - they want to act energetically to solve the problem. Focus on the here-and-now, spontaneous, enjoy each moment that they can be active with others. Enjoy material comforts and style. Learn best through doing.");
+            textView3.setText("Flexible and tolerant, they take a pragmatic approach focused on immediate results. Theories and conceptual explanations bore them - they want to act energetically to solve the problem. Focus on the here-and-now, spontaneous(unforced), enjoy each moment that they can be active with others. Enjoy material comforts and style. Learn best through doing.");
             Toast.makeText(this,Answers.getInstance().MayersScore(),Toast.LENGTH_LONG).show();
 
 
@@ -129,7 +128,7 @@ textView.setText(MainActivity.spinner2.getSelectedItem().toString());
         else if(Answers.getInstance().MayersScore().equalsIgnoreCase("esfp")) {
             bgImageView.setBackgroundResource(R.drawable.esfp);
             textView2.setText("Extraversion ,Sensing , Feeling , Perceiving ");
-            textView3.setText("Outgoing, friendly, and accepting. Exuberant lovers of life, people, and material comforts. Enjoy working with others to make things happen. Bring common sense and a realistic approach to their work, and make work fun. Flexible and spontaneous, adapt readily to new people and environments. Learn best by trying a new skill with other people.");
+            textView3.setText("Outgoing, friendly, and accepting. Exuberant lovers of life, people, and material comforts. Enjoy working with others to make things happen. Bring common sense and a realistic approach to their work, and make work fun. Flexible and spontaneous(unforced), adapt readily to new people and environments. Learn best by trying a new skill with other people.");
             Toast.makeText(this,Answers.getInstance().MayersScore(),Toast.LENGTH_LONG).show();
 
         }
@@ -165,7 +164,7 @@ textView.setText(MainActivity.spinner2.getSelectedItem().toString());
         else if(Answers.getInstance().MayersScore().equalsIgnoreCase("esfj")) {
             bgImageView.setBackgroundResource(R.drawable.esfj);
             textView2.setText("Extraversion , Sensing , Feeling , Judging ");
-            textView3.setText("Warmhearted, conscientious, and cooperative. Want harmony in their environment, work with determination to establish it. Like to work with others to complete tasks accurately and on time. Loyal, follow through even in small matters. Notice what others need in their day-by-day lives and try to provide it. Want to be appreciated for who they are and for what they contribute.");
+            textView3.setText("Warmhearted, conscientious(hard-worker/fulfils duty), and cooperative. Want harmony in their environment, work with determination to establish it. Like to work with others to complete tasks accurately and on time. Loyal, follow through even in small matters. Notice what others need in their day-by-day lives and try to provide it. Want to be appreciated for who they are and for what they contribute.");
             Toast.makeText(this,Answers.getInstance().MayersScore(),Toast.LENGTH_LONG).show();
 
 
@@ -181,7 +180,7 @@ textView.setText(MainActivity.spinner2.getSelectedItem().toString());
 
 
         }
-       else if(Answers.getInstance().MayersScore().equalsIgnoreCase("entj")) {
+        else if(Answers.getInstance().MayersScore().equalsIgnoreCase("entj")) {
             bgImageView.setBackgroundResource(R.drawable.entj);
             textView2.setText("Extraversion , Intuition , Thinking , Judging  ");
             textView3.setText("Frank, decisive, assume leadership readily. Quickly see illogical and inefficient procedures and policies, develop and implement comprehensive systems to solve organizational problems. Enjoy long-term planning and goal setting. Usually well informed, well read, enjoy expanding their knowledge and passing it on to others. Forceful in presenting their ideas.");

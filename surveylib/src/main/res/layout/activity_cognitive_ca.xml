@@ -6,18 +6,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
-        tools:context="androidadvance.com.androidsurveyexample.com.androidadvance.androidsurvey.CognitiveCa">
+        tools:context="c.androidadvance.androidsurvey.CognitiveCa">
+
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/imageView1"
-            android:layout_above="@+id/button1" />
 
-    <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Photo"
-            android:id="@+id/button1"
-            android:layout_alignParentBottom="true" />
+            />
+
+
 
 </RelativeLayout>

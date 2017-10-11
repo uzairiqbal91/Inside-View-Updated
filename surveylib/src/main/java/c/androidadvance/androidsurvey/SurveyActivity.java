@@ -1,4 +1,4 @@
-package com.androidadvance.androidsurvey;
+package c.androidadvance.androidsurvey;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,16 +7,16 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import com.androidadvance.androidsurvey.adapters.AdapterFragmentQ;
-import com.androidadvance.androidsurvey.fragment.FragmentCheckboxes;
-import com.androidadvance.androidsurvey.fragment.FragmentEnd;
-import com.androidadvance.androidsurvey.fragment.FragmentMultiline;
-import com.androidadvance.androidsurvey.fragment.FragmentNumber;
-import com.androidadvance.androidsurvey.fragment.FragmentRadioboxes;
-import com.androidadvance.androidsurvey.fragment.FragmentStart;
-import com.androidadvance.androidsurvey.fragment.FragmentTextSimple;
-import com.androidadvance.androidsurvey.models.Question;
-import com.androidadvance.androidsurvey.models.SurveyPojo;
+import c.androidadvance.androidsurvey.adapters.AdapterFragmentQ;
+import c.androidadvance.androidsurvey.fragment.FragmentCheckboxes;
+import c.androidadvance.androidsurvey.fragment.FragmentEnd;
+import c.androidadvance.androidsurvey.fragment.FragmentMultiline;
+import c.androidadvance.androidsurvey.fragment.FragmentNumber;
+import c.androidadvance.androidsurvey.fragment.FragmentRadioboxes;
+import c.androidadvance.androidsurvey.fragment.FragmentStart;
+import c.androidadvance.androidsurvey.fragment.FragmentTextSimple;
+import c.androidadvance.androidsurvey.models.Question;
+import c.androidadvance.androidsurvey.models.SurveyPojo;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;

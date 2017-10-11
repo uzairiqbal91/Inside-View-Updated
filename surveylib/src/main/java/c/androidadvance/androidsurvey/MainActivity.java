@@ -1,12 +1,12 @@
-package com.androidadvance.androidsurvey;
+package c.androidadvance.androidsurvey;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.Spinner;
 
 import com.google.firebase.database.DatabaseReference;
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static Spinner spinner1;
     public static Spinner spinner2;
-
+    public static Bitmap bit;
 
 
 

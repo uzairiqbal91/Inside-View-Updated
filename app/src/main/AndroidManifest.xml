@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="androidadvance.com.androidsurveyexample">
-
+          package="e.com.androidsurveyexample">
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
             android:allowBackup="true"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
@@ -9,7 +9,7 @@
             android:label="@string/app_name"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name="com.androidadvance.androidsurvey.MainActivity">
+        <activity android:name="c.androidadvance.androidsurvey.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -17,10 +17,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.androidadvance.androidsurvey.SurveyActivity"
+            android:name="c.androidadvance.androidsurvey.SurveyActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:windowSoftInputMode="stateHidden"/>
-        <activity android:name="com.androidadvance.androidsurvey.CognitiveCa">
+        <activity android:name="c.androidadvance.androidsurvey.CognitiveCa">
         </activity>
     </application>
 

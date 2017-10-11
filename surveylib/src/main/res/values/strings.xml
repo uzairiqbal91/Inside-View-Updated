@@ -5,6 +5,7 @@
     <string name="close">Close</string>
     <string name="finish">Finish</string>
     <string-array name="gender">
+        <item>Choose Gender</item>
         <item>Male</item>
         <item>Female</item>
 
@@ -15,6 +16,7 @@
 
 
     <string-array name="age">
+        <item>Choose Age</item>
         <item>17</item>
         <item>18</item>
         <item>19</item>

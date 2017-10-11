@@ -12,8 +12,8 @@
       "required":  true,
       "random_choices": false,
       "choices": [
-        "Expend energy, enjoy groups",
-        "Conserve energy, enjoy one-on-one"
+        " enjoy groups",
+        " enjoy one-on-one"
       ]
     },
     {
@@ -21,9 +21,9 @@
       "question_title": "question_2 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
-      "random_choices": true,
+      "random_choices": false,
       "choices": [
-        "Interpret literally",
+        "Interpret literally(taking words in their usual or most basic sense without symbol/image)",
         "Look for meaning and possibilities"
       ]
     },
@@ -32,10 +32,10 @@
       "question_title": "question_3 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
-      "random_choices": true,
+      "random_choices": false,
       "choices": [
-        "Logical,thinking, questioning",
-        "Empathetic,feeling,accommodating"
+        "Logical/thinking/questioning",
+        "Empathetic(showing an ability to understand and share the feelings of another)"
       ]
     },
     {
@@ -43,10 +43,10 @@
       "question_title": "question_4 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
-      "random_choices": true,
+      "random_choices": false,
       "choices": [
-        "Organized,orderly",
-        "Flexible,adaptable"
+        "Organized/orderly",
+        "Flexible(capable of bending easily)/adaptable"
       ]
     },
     {
@@ -54,10 +54,10 @@
       "question_title": "question_5 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
-      "random_choices": true,
+      "random_choices": false,
       "choices": [
-        "More outgoing, think out loud",
-        "More reserved, think to yourself"
+        "More outgoing/think out loud",
+        "More reserved/think to yourself"
       ]
     },
     {
@@ -65,10 +65,10 @@
       "question_title": "question_6 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
-      "random_choices": true,
+      "random_choices": false,
       "choices": [
-        "Practical,realistic, experiential",
-        "Imaginative,innovative, theoretical"
+        "Practical/realistic",
+        "Imaginative/innovative"
       ]
     },
     {
@@ -76,10 +76,10 @@
       "question_title": "question_7 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
-      "random_choices": true,
+      "random_choices": false,
       "choices": [
-        "Candid, straight forward, frank, experiential",
-        "Tactful, kind, encouraging"
+        "Candid/straight forward/frank",
+        "Tactful(having or showing skill and sensitivity in dealing with others)/kind-hearted/encouraging"
       ]
     },
     {
@@ -87,10 +87,10 @@
       "question_title": "question_8 : In Which Category Do You Belong ?",
       "description": "",
       "required": true,
-      "random_choices": true,
+      "random_choices": false,
       "choices": [
-        "Plan,schedule",
-        "Unplanned, spontaneous"
+        "Plan/schedule",
+        "Unplanned/spontaneous"
       ]
     },
     {
@@ -98,10 +98,10 @@
       "question_title": "question_9 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
-      "random_choices": true,
+      "random_choices": false,
       "choices": [
-        "Seek many tasks, public activities, interaction with others",
-        "Seek private, solitary activities with quiet to concentrate"
+        "Seek many tasks/public activities/interaction with others",
+        "Seek private/solitary activities with quiet to concentrate"
       ]
     },
     {
@@ -109,10 +109,10 @@
       "question_title": "question_10 : In Which Category Do You Belong ?",
       "description": "",
       "required": true,
-      "random_choices": true,
+      "random_choices": false,
       "choices": [
-        "Standard, usual, conventional",
-        "Different, novel, unique"
+        "Normal/common/conventional(ordinary)",
+        "Different/unique"
       ]
     },
     {
@@ -120,10 +120,10 @@
       "question_title": "question_11 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
-      "random_choices": true,
+      "random_choices": false,
       "choices": [
-        "Firm, tend to criticize, hold the line",
-        "Gentle, tend to appreciate, conciliate(statisfied)"
+        "Firm(rigid)/tend to criticize/hold the line(not yield to the pressure of a difficult situation.)",
+        "Gentle/tend to appreciate/conciliate(stop someone being angry)"
       ]
     },
     {
@@ -131,10 +131,10 @@
       "question_title": "question_12 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
-      "random_choices": true,
+      "random_choices": false,
       "choices": [
-        "Regulated, structured",
-        "Easygoing, “live” and “let live”"
+        "Regulated(have control in your life)/structured",
+        "Easygoing/“live” and “let live”"
       ]
     },
     {
@@ -142,10 +142,10 @@
       "question_title": "question_13 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
-      "random_choices": true,
+      "random_choices": false,
       "choices": [
-        "External, communicative, express yourself",
-        "internal, reticent(reserved/shy), keep to yourself"
+        "External/communicative/express yourself",
+        "internal/reticent(reserved/shy)/keep to yourself"
       ]
     },
     {
@@ -153,10 +153,10 @@
       "question_title": "question_14 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
-      "random_choices": true,
+      "random_choices": false,
       "choices": [
         "Focus on here-and-now",
-        "Look to the future, global perspective, “big picture”"
+        "Look to the future/global perspective/“big picture”"
       ]
     },
     {
@@ -164,10 +164,10 @@
       "question_title": "question_15 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
-      "random_choices": true,
+      "random_choices": false,
       "choices": [
-        "Tough-minded, just",
-        "Tender-hearted, merciful"
+        "Tough-minded(able to face up)/just(based on or behaving according to what is morally right and fair)",
+        "Tender-hearted(kind-hearted)/merciful(forgiving)"
       ]
     },
     {
@@ -175,10 +175,10 @@
       "question_title": "question_16 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
-      "random_choices": true,
+      "random_choices": false,
       "choices": [
-        "Preparation, plan ahead",
-        "Go with the flow, adapt as you go"
+        "Preparation/plan ahead",
+        "Go with the flow/adapt as you go"
       ]
     },
     {
@@ -186,10 +186,10 @@
       "question_title": "question_17 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
-      "random_choices": true,
+      "random_choices": false,
       "choices": [
-        "Active, initiate",
-        "Reflective, deliberate"
+        "Active(ready to engage in physically energetic pursuits)/initiate",
+        "Reflective(relating to or characterized by deep thought)/deliberate(careful)"
       ]
     },
     {
@@ -197,10 +197,10 @@
       "question_title": "question_18 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
-      "random_choices": true,
+      "random_choices": false,
       "choices": [
-        "Facts, things, “what is”",
-        "Ideas, dreams, “what could be,” philosophical"
+        "Facts/things/“what is”",
+        "Ideas/dreams/“what could be,” philosophical"
       ]
     },
     {
@@ -208,20 +208,20 @@
       "question_title": "question_19 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
-      "random_choices": true,
+      "random_choices": false,
       "choices": [
-        "matter of fact, issue-oriented",
-        "sensitive, people-oriented, compassionate"
+        "matter of fact(realistic)/issue-oriented(focused on or concerned with a specific issue eg . social or political)",
+        "sensitive/people-oriented( focused on interaction with people)"
       ]
     },{
       "question_type": "Radioboxes",
       "question_title": "question_20 : In Which Category Do You Belong ?",
       "description": "",
       "required":  true,
-      "random_choices": true,
+      "random_choices": false,
       "choices": [
-        "control, govern",
-        "latitude, freedom"
+        "control/govern",
+        "latitude/freedom"
       ]
     }
   ]
